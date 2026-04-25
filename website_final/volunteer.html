@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Volunteer - NOUR AL- KHEIR</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="imege/icon.png" class="logo" alt="Logo"
+                        style="width: 50px; height: 50px; margin-right: 8px; border-radius: 50%;">
+                    <span class="logo-text" data-i18n="brand.name">NOUR AL-
+                        KHEIR</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about.html" data-i18n="nav.about">About Us</a>
+                    <a href="donate.html" data-i18n="nav.donate">Donate</a>
+                    <a href="campaigns.html"
+                        data-i18n="nav.campaigns">Campaigns</a>
+                    <a href="volunteer.html"
+                        data-i18n="nav.volunteer">Volunteer</a>
+                    <a href="beneficiaries.html"
+                        data-i18n="nav.beneficiaries">Beneficiaries</a>
+                    <a href="news.html" data-i18n="nav.news">News & Events</a>
+                    <a href="contact.html" data-i18n="nav.contact">Contact
+                        Us</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-toggle"
+                        onclick="toggleLanguage()">العربية</button>
+                    <a href="login1.html" class="btn-outline"
+                        style="padding: 10px 20px;"
+                        data-i18n="header.login">Login</a>
+                    <a href="login1.html" class="btn-primary"
+                        data-i18n="hero.donate">Donate Now</a>
+                    <button class="mobile-menu-btn"
+                        onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="hero"
+            style="background-image: url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2b2x1bnRlZXIlMjBncm91cCUyMHRlYW13b3JrfGVufDF8fHx8MTc3MzAxMDg3OXww&ixlib=rb-4.1.0&q=80&w=1080'); height: 400px;">
+            <div class="hero-content">
+                <h1 data-i18n="volunteer.hero.title">Join Our Volunteer
+                    Team</h1>
+                <p data-i18n="volunteer.hero.subtitle">Make a difference in your
+                    community through volunteering</p>
+            </div>
+        </section>
+
+        <!-- Why Volunteer -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"
+                        data-i18n="volunteer.why.title">Why Volunteer With
+                        Us?</h2>
+                    <p class="section-subtitle"
+                        data-i18n="volunteer.why.subtitle">Volunteering is a
+                        rewarding
+                        experience that benefits everyone</p>
+                </div>
+
+                <div class="grid grid-4">
+                    <div style="text-align: center; padding: 30px;">
+                        <div
+                            style="width: 80px; height: 80px; background: rgba(231, 76, 60, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <svg fill="currentColor" viewBox="0 0 24 24"
+                                style="width: 40px; height: 40px; color: var(--primary-color);">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 20px; margin-bottom: 10px;"
+                            data-i18n="volunteer.impact.title">Make
+                            an Impact</h3>
+                        <p style="color: var(--text-light);"
+                            data-i18n="volunteer.impact.text">Directly improve
+                            lives in your community</p>
+                    </div>
+
+                    <div style="text-align: center; padding: 30px;">
+                        <div
+                            style="width: 80px; height: 80px; background: rgba(231, 76, 60, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <svg fill="currentColor" viewBox="0 0 24 24"
+                                style="width: 40px; height: 40px; color: var(--primary-color);">
+                                <path
+                                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 20px; margin-bottom: 10px;">Meet
+                            New People</h3>
+                        <p style="color: var(--text-light);">Connect with
+                            like-minded individuals</p>
+                    </div>
+
+                    <div style="text-align: center; padding: 30px;">
+                        <div
+                            style="width: 80px; height: 80px; background: rgba(231, 76, 60, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <svg fill="currentColor" viewBox="0 0 24 24"
+                                style="width: 40px; height: 40px; color: var(--primary-color);">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <h3
+                            style="font-size: 20px; margin-bottom: 10px;">Develop
+                            Skills</h3>
+                        <p style="color: var(--text-light);">Gain valuable
+                            experience and skills</p>
+                    </div>
+
+                    <div style="text-align: center; padding: 30px;">
+                        <div
+                            style="width: 80px; height: 80px; background: rgba(231, 76, 60, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <svg fill="currentColor" viewBox="0 0 24 24"
+                                style="width: 40px; height: 40px; color: var(--primary-color);">
+                                <path
+                                    d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z" />
+                            </svg>
+                        </div>
+                        <h3 style="font-size: 20px; margin-bottom: 10px;">Feel
+                            Fulfilled</h3>
+                        <p style="color: var(--text-light);">Experience the joy
+                            of giving back</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Opportunities -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Volunteer Opportunities</h2>
+                    <p class="section-subtitle">Choose from various ways to
+                        contribute</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Community Outreach</h3>
+                            <p class="card-text">Help us reach and support
+                                families in need through door-to-door visits and
+                                community events.</p>
+                            <ul
+                                style="color: var(--text-light); margin: 20px 0; line-height: 2;">
+                                <li>• Weekend availability required</li>
+                                <li>• Transportation provided</li>
+                                <li>• Training included</li>
+                            </ul>
+                            <a href="#volunteer-form" class="btn-primary"
+                                style="display: block; text-align: center;">Apply
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Event Coordination</h3>
+                            <p class="card-text">Organize and manage fundraising
+                                events, charity drives, and community
+                                gatherings.</p>
+                            <ul
+                                style="color: var(--text-light); margin: 20px 0; line-height: 2;">
+                                <li>• Flexible schedule</li>
+                                <li>• Event planning experience</li>
+                                <li>• Team collaboration</li>
+                            </ul>
+                            <a href="#volunteer-form" class="btn-primary"
+                                style="display: block; text-align: center;">Apply
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Teaching & Tutoring</h3>
+                            <p class="card-text">Share your knowledge by
+                                tutoring children and adults in various
+                                subjects.</p>
+                            <ul
+                                style="color: var(--text-light); margin: 20px 0; line-height: 2;">
+                                <li>• 2-4 hours per week</li>
+                                <li>• Subject expertise required</li>
+                                <li>• Remote options available</li>
+                            </ul>
+                            <a href="#volunteer-form" class="btn-primary"
+                                style="display: block; text-align: center;">Apply
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Medical Support</h3>
+                            <p class="card-text">Healthcare professionals can
+                                provide medical assistance to underserved
+                                communities.</p>
+                            <ul
+                                style="color: var(--text-light); margin: 20px 0; line-height: 2;">
+                                <li>• Licensed professionals</li>
+                                <li>• Monthly commitment</li>
+                                <li>• Medical insurance provided</li>
+                            </ul>
+                            <a href="#volunteer-form" class="btn-primary"
+                                style="display: block; text-align: center;">Apply
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Food Distribution</h3>
+                            <p class="card-text">Help prepare and distribute
+                                meals to families experiencing food
+                                insecurity.</p>
+                            <ul
+                                style="color: var(--text-light); margin: 20px 0; line-height: 2;">
+                                <li>• Physical activity involved</li>
+                                <li>• Weekly shifts available</li>
+                                <li>• Group volunteering welcome</li>
+                            </ul>
+                            <a href="#volunteer-form" class="btn-primary"
+                                style="display: block; text-align: center;">Apply
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Administrative Support</h3>
+                            <p class="card-text">Assist with office tasks, data
+                                entry, and organizational management.</p>
+                            <ul
+                                style="color: var(--text-light); margin: 20px 0; line-height: 2;">
+                                <li>• Office or remote work</li>
+                                <li>• Computer skills required</li>
+                                <li>• Flexible hours</li>
+                            </ul>
+                            <a href="#volunteer-form" class="btn-primary"
+                                style="display: block; text-align: center;">Apply
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer Registration Form -->
+        <section class="section" id="volunteer-form">
+            <div class="container">
+                <div class="card" style="max-width: 800px; margin: 0 auto;">
+                    <div class="card-content" style="padding: 40px;">
+                        <h2 class="section-title"
+                            style="margin-bottom: 10px; text-align: left;">Volunteer
+                            Registration</h2>
+                        <p class="section-subtitle"
+                            style="margin-bottom: 40px; text-align: left;">Fill
+                            out the form below to join our volunteer team</p>
+
+                        <form data-form="volunteer">
+                            <div class="grid grid-2">
+                                <div class="form-group">
+                                    <label class="form-label">Full Name
+                                        *</label>
+                                    <input type="text" class="form-input"
+                                        name="name"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Email Address
+                                        *</label>
+                                    <input type="email" class="form-input"
+                                        name="email"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Phone Number
+                                        *</label>
+                                    <input type="tel" class="form-input"
+                                        name="phone"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Age</label>
+                                    <input type="number" class="form-input"
+                                        name="age">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Volunteer Opportunity
+                                    *</label>
+                                <select class="form-select" name="opportunity"
+                                    required>
+                                    <option value>Select an opportunity</option>
+                                    <option value="outreach">Community
+                                        Outreach</option>
+                                    <option value="events">Event
+                                        Coordination</option>
+                                    <option value="teaching">Teaching &
+                                        Tutoring</option>
+                                    <option value="medical">Medical
+                                        Support</option>
+                                    <option value="food">Food
+                                        Distribution</option>
+                                    <option value="admin">Administrative
+                                        Support</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Availability *</label>
+                                <select class="form-select" name="availability"
+                                    required>
+                                    <option value>Select your
+                                        availability</option>
+                                    <option value="weekdays">Weekdays</option>
+                                    <option value="weekends">Weekends</option>
+                                    <option value="both">Both Weekdays &
+                                        Weekends</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Why do you want to
+                                    volunteer? *</label>
+                                <textarea class="form-textarea"
+                                    name="motivation"
+                                    required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Previous Volunteer
+                                    Experience</label>
+                                <textarea class="form-textarea"
+                                    name="experience"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary"
+                                style="width: 100%; padding: 16px; font-size: 18px;">
+                                Submit Application
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="logo" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                                style="width: 32px; height: 32px;">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <span class="logo-text" data-i18n="brand.name">NOUR
+                                AL- KHEIR</span>
+                        </div>
+                        <p class="footer-text" data-i18n="footer.tagline">We are
+                            dedicated to helping those
+                            in need and building a better tomorrow for
+                            everyone.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.quickLinks">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html"
+                                    data-i18n="nav.home">Home</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About
+                                    Us</a></li>
+                            <li><a href="campaigns.html"
+                                    data-i18n="nav.campaigns">Campaigns</a></li>
+                            <li><a href="contact.html"
+                                    data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.contactInfo">Contact
+                            Information</h3>
+                        <ul class="footer-links">
+                            <li>📧 info@nour al-kheir.org</li>
+                            <li>📞 +20 123 456 7890</li>
+                            <li>📍 123 Charity Street, Cairo, Egypt</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.donate">Donate</h3>
+                        <p class="footer-text" style="margin-bottom: 20px;"
+                            data-i18n="footer.donateText">Make
+                            a difference in someone's life today.</p>
+                        <a href="login1.html" class="btn-primary"
+                            style="display: inline-block;"
+                            data-i18n="hero.donate">Donate Now</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">© 2024 NOUR AL- KHEIR. All
+                        rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+        <script>
+(function(){
+  if(localStorage.getItem("token")){
+    document.querySelectorAll('a[href="login1.html"]').forEach(a=>{
+      a.href="admain/WEB.html"; a.textContent="⚙️ Dashboard";
+    });
+  }
+})();
+</script>
+    </body>
+</html>

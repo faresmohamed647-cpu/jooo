@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Donate - NOUR AL- KHEIR</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="imege/icon.png" class="logo" alt="Logo"
+                        style="width: 50px; height: 50px; margin-right: 8px; border-radius: 50%;">
+                    <span class="logo-text" data-i18n="brand.name">NOUR AL-
+                        KHEIR</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about.html" data-i18n="nav.about">About Us</a>
+                    <a href="donate.html" data-i18n="nav.donate">Donate</a>
+                    <a href="campaigns.html"
+                        data-i18n="nav.campaigns">Campaigns</a>
+                    <a href="volunteer.html"
+                        data-i18n="nav.volunteer">Volunteer</a>
+                    <a href="beneficiaries.html"
+                        data-i18n="nav.beneficiaries">Beneficiaries</a>
+                    <a href="news.html" data-i18n="nav.news">News & Events</a>
+                    <a href="contact.html" data-i18n="nav.contact">Contact
+                        Us</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-toggle"
+                        onclick="toggleLanguage()">العربية</button>
+                    <a href="login1.html" class="btn-outline"
+                        style="padding: 10px 20px;"
+                        data-i18n="header.login">Login</a>
+                    <a href="login1.html" class="btn-primary"
+                        data-i18n="hero.donate">Donate Now</a>
+                    <button class="mobile-menu-btn"
+                        onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="hero"
+            style="background: var(--primary-color); height: 300px;">
+            <div class="hero-content">
+                <h1 data-i18n="donate.hero.title">Make a Donation</h1>
+                <p data-i18n="donate.hero.subtitle">Your generosity changes
+                    lives</p>
+            </div>
+        </section>
+
+        <!-- Donation Types -->
+        <section class="section">
+            <div class="container">
+                <div class="donation-types">
+                    <div class="donation-type active"
+                        onclick="selectDonationType(this)">
+                        <svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path
+                                d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <h3 data-i18n="donate.type1.title">Money Donation</h3>
+                        <p data-i18n="donate.type1.text">Financial support helps
+                            us serve more families</p>
+                    </div>
+
+                    <div class="donation-type"
+                        onclick="selectDonationType(this)">
+                        <svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path
+                                d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
+                        <h3 data-i18n="donate.type2.title">Food Donation</h3>
+                        <p data-i18n="donate.type2.text">Provide meals to those
+                            in hunger</p>
+                    </div>
+
+                    <div class="donation-type"
+                        onclick="selectDonationType(this)">
+                        <svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <line x1="20" y1="8" x2="20" y2="14"></line>
+                            <line x1="23" y1="11" x2="17" y2="11"></line>
+                        </svg>
+                        <h3 data-i18n="donate.type3.title">Clothes Donation</h3>
+                        <p data-i18n="donate.type3.text">Donate clothing for
+                            families in need</p>
+                    </div>
+
+                    <div class="donation-type"
+                        onclick="selectDonationType(this)">
+                        <svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                        <h3 data-i18n="donate.type4.title">Medical Support</h3>
+                        <p data-i18n="donate.type4.text">Help us provide
+                            healthcare services</p>
+                    </div>
+
+                    <div class="donation-type"
+                        onclick="selectDonationType(this)">
+                        <svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path
+                                d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        <h3 data-i18n="donate.type5.title">Education
+                            Support</h3>
+                        <p data-i18n="donate.type5.text">Empower children
+                            through education</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Form -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="card" style="max-width: 800px; margin: 0 auto;">
+                    <div class="card-content" style="padding: 40px;">
+                        <h2 class="section-title"
+                            style="margin-bottom: 30px; text-align: left;"
+                            data-i18n="donate.department.title">Choose
+                            Where Your Donation Goes</h2>
+
+                        <form data-form="donation">
+                            <!-- Department Selection -->
+                            <div class="amount-grid">
+                                <button type="button" class="amount-btn active"
+                                    onclick="selectDonationDepartment(this)"
+                                    data-department="food-support"
+                                    data-i18n="donate.department.food">Food
+                                    Support</button>
+                                <button type="button" class="amount-btn"
+                                    onclick="selectDonationDepartment(this)"
+                                    data-department="medical-care"
+                                    data-i18n="donate.department.medical">Medical
+                                    Care</button>
+                                <button type="button" class="amount-btn"
+                                    onclick="selectDonationDepartment(this)"
+                                    data-department="education"
+                                    data-i18n="donate.department.education">Education</button>
+                                <button type="button" class="amount-btn"
+                                    onclick="selectDonationDepartment(this)"
+                                    data-department="orphan-support"
+                                    data-i18n="donate.department.orphans">Orphan
+                                    Support</button>
+                                <button type="button" class="amount-btn"
+                                    onclick="selectDonationDepartment(this)"
+                                    data-department="housing"
+                                    data-i18n="donate.department.housing">Housing
+                                    Support</button>
+                                <button type="button" class="amount-btn"
+                                    onclick="selectDonationDepartment(this)"
+                                    data-department="urgent-cases"
+                                    data-i18n="donate.department.urgent">Urgent
+                                    Cases</button>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label"
+                                    data-i18n="donate.department.noteLabel">Selected
+                                    Department</label>
+                                <input type="text" id="selected-department"
+                                    class="form-input" readonly
+                                    data-i18n-value="donate.department.food"
+                                    value="Food Support">
+                                <input type="hidden" id="donation-department"
+                                    name="donation_department"
+                                    value="food-support">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label"
+                                    data-i18n="donate.amountLabel">Donation
+                                    Amount</label>
+                                <input type="number" id="donation-amount"
+                                    name="donation_amount"
+                                    class="form-input"
+                                    min="1" step="1"
+                                    data-i18n-placeholder="donate.amountPlaceholder"
+                                    placeholder="Enter your donation amount"
+                                    required>
+                            </div>
+
+                            <!-- Payment Information -->
+                            <div
+                                style="border-top: 2px solid var(--border-color); padding-top: 30px; margin-top: 30px;">
+                                <h3
+                                    style="font-size: 24px; margin-bottom: 20px;"
+                                    data-i18n="donate.paymentTitle">Payment
+                                    Information</h3>
+
+                                <div class="grid grid-2">
+                                    <div class="form-group">
+                                        <label class="form-label"
+                                            data-i18n="donate.fullName">Full
+                                            Name</label>
+                                        <input type="text" class="form-input"
+                                            name="donor_name"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label"
+                                            data-i18n="donate.email">Email
+                                            Address</label>
+                                        <input type="email" class="form-input"
+                                            name="donor_email"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label"
+                                            data-i18n="donate.phone">Phone
+                                            Number</label>
+                                        <input type="tel" class="form-input"
+                                            name="donor_phone"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label"
+                                            data-i18n="donate.cardNumber">Card
+                                            Number</label>
+                                        <input type="text" class="form-input"
+                                            name="card_number"
+                                            data-i18n-placeholder="donate.cardPlaceholder"
+                                            placeholder="1234 5678 9012 3456"
+                                            required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label"
+                                            data-i18n="donate.expiry">Expiry
+                                            Date</label>
+                                        <input type="text" class="form-input"
+                                            name="card_expiry"
+                                            data-i18n-placeholder="donate.expiryPlaceholder"
+                                            placeholder="MM/YY" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label"
+                                            data-i18n="donate.cvv">CVV</label>
+                                        <input type="text" class="form-input"
+                                            name="card_cvv"
+                                            data-i18n-placeholder="donate.cvvPlaceholder"
+                                            placeholder="123" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-primary"
+                                style="width: 100%; padding: 16px; font-size: 18px; margin-top: 30px;"
+                                data-i18n="donate.complete">
+                                Complete Donation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transparency Section -->
+        <section class="section">
+            <div class="container">
+                <div class="card" style="max-width: 800px; margin: 0 auto;">
+                    <div class="card-content"
+                        style="padding: 40px; text-align: center;">
+                        <svg fill="currentColor" viewBox="0 0 24 24"
+                            style="width: 64px; height: 64px; color: var(--primary-color); margin: 0 auto 20px;">
+                            <path
+                                d="M11 2v20c-5.07-.5-9-4.79-9-10s3.93-9.5 9-10zm2.03 0v8.99H22c-.47-4.74-4.24-8.52-8.97-8.99zm0 11.01V22c4.74-.47 8.5-4.25 8.97-8.99h-8.97z" />
+                        </svg>
+                        <h2 class="section-title"
+                            data-i18n="donate.transparency.title">How Your
+                            Donation Is Used</h2>
+                        <p class="section-subtitle"
+                            style="margin-bottom: 40px;"
+                            data-i18n="donate.transparency.subtitle">We are
+                            committed to
+                            transparency in all our operations</p>
+
+                        <div style="text-align: left;">
+                            <div style="margin-bottom: 30px;">
+                                <div
+                                    style="display: flex; justify-between; margin-bottom: 10px;">
+                                    <span style="font-weight: 600;"
+                                        data-i18n="donate.programs">Programs &
+                                        Services</span>
+                                    <span
+                                        style="font-weight: 700; color: var(--primary-color);">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"
+                                        style="width: 85%;"></div>
+                                </div>
+                            </div>
+
+                            <div style="margin-bottom: 30px;">
+                                <div
+                                    style="display: flex; justify-between; margin-bottom: 10px;">
+                                    <span
+                                        style="font-weight: 600;"
+                                        data-i18n="donate.operations">Operations</span>
+                                    <span
+                                        style="font-weight: 700; color: var(--primary-color);">10%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"
+                                        style="width: 10%;"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div
+                                    style="display: flex; justify-between; margin-bottom: 10px;">
+                                    <span
+                                        style="font-weight: 600;"
+                                        data-i18n="donate.fundraising">Fundraising</span>
+                                    <span
+                                        style="font-weight: 700; color: var(--primary-color);">5%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill"
+                                        style="width: 5%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="margin-top: 30px; color: var(--text-light);"
+                            data-i18n="donate.transparency.note">
+                            85% of every dollar donated goes directly to our
+                            programs and services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="logo" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                                style="width: 32px; height: 32px;">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <span class="logo-text" data-i18n="brand.name">NOUR
+                                AL- KHEIR</span>
+                        </div>
+                        <p class="footer-text" data-i18n="footer.tagline">We are
+                            dedicated to helping those
+                            in need and building a better tomorrow for
+                            everyone.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.quickLinks">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html"
+                                    data-i18n="nav.home">Home</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About
+                                    Us</a></li>
+                            <li><a href="campaigns.html"
+                                    data-i18n="nav.campaigns">Campaigns</a></li>
+                            <li><a href="contact.html"
+                                    data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.contactInfo">Contact
+                            Information</h3>
+                        <ul class="footer-links">
+                            <li>📧 info@nour al-kheir.org</li>
+                            <li>📞 +20 123 456 7890</li>
+                            <li>📍 123 Charity Street, Cairo, Egypt</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.donate">Donate</h3>
+                        <p class="footer-text" style="margin-bottom: 20px;"
+                            data-i18n="footer.donateText">Make
+                            a difference in someone's life today.</p>
+                        <a href="login1.html" class="btn-primary"
+                            style="display: inline-block;"
+                            data-i18n="hero.donate">Donate Now</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">© 2024 NOUR AL- KHEIR. All
+                        rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+        <script>
+(function(){
+  if(localStorage.getItem("token")){
+    document.querySelectorAll('a[href="login1.html"]').forEach(a=>{
+      a.href="admain/WEB.html"; a.textContent="⚙️ Dashboard";
+    });
+  }
+})();
+</script>
+    </body>
+</html>

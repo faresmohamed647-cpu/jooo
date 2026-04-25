@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="lang-bar"
+        style="position:fixed;top:0;left:0;right:0;z-index:9999;background:rgba(231,76,60,0.95);color:#fff;padding:10px 20px;text-align:end;">
+        <button class="lang-toggle" onclick="toggleLanguage()"
+            style="background:#fff;color:#e74c3c;border:none;padding:8px 16px;border-radius:8px;cursor:pointer;font-weight:600;">العربية</button>
+    </div>
+    <div class="container">
+        <div class="curved-shape"></div>
+        <div class="curved-shape2"></div>
+        <div class="form-box Login">
+            <h2 class="animation" style="--D:0; --S:21;" data-i18n="login1.login">Login</h2>
+            <form action="#">
+                <div class="input-box animation" style="--D:1; --S:22;">
+                    <input type="text" required>
+                    <label for="" data-i18n="login1.username">Username</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--D:2; --S:23;">
+                    <input type="password" required>
+                    <label for="" data-i18n="login1.password">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div id="login-api-feedback"
+                    style="display:none;padding:8px 12px;border-radius:8px;font-size:0.85rem;font-weight:600;margin-bottom:8px;">
+                </div>
+                <div class="input-box animation" style="--D:3; --S:24;">
+                    <button href="index.html" class="btn" type="submit" data-i18n="login1.login">Login</button>
+                </div>
+                <div class="regi-link animation" style="--D:4; --S:25;">
+                    <p><span data-i18n="login1.noAccount">Don't have an account?</span> <a href="#" class="SignUpLink"
+                            data-i18n="login1.signUp">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-content Login">
+            <h2 class="animation" style="--D:0; --S:20;" data-i18n="login1.welcome">welcome back!</h2>
+            <p class="animation" style="--D:1; --S:21;" data-i18n="login1.welcomeText">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Blanditiis,</p>
+        </div>
+        <div class="form-box Register">
+            <h2 class="animation" style="--li:17; --S:0;" data-i18n="login1.register">Register</h2>
+            <form id="register-form" action="#">
+                <div class="input-box animation" style="--li:18; --S:1;">
+                    <input type="text" name="name" required>
+                    <label for="" data-i18n="login1.username">Username</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box animation" style="--li:19; --S:2;">
+                    <input type="email" name="email" id="reg-email" required>
+                    <label for="reg-email" data-i18n="login1.email">Email</label>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box animation" style="--li:20; --S:3;">
+                    <input type="password" name="password" id="reg-password" required minlength="8"
+                        autocomplete="new-password">
+                    <label for="reg-password" data-i18n="login1.password">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-box animation" style="--li:21; --S:4;">
+                    <input type="password" name="password_confirmation" id="reg-confirm-password" required minlength="8"
+                        autocomplete="new-password">
+                    <label for="reg-confirm-password" data-i18n="login1.confirmPassword">Confirm Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <p class="password-error" id="reg-password-error"
+                    style="font-size: 12px; color: #e74c3c; margin: -8px 0 12px 0; display: none;"></p>
+                <div class="input-box animation" style="--li:22; --S:5;">
+                    <button class="btn" type="submit" data-i18n="login1.register">Register</button>
+                </div>
+                <div class="regi-link animation" style="--li:23; --S:6;">
+                    <p><span data-i18n="login1.haveAccount">Already have an account?</span> <a href="#"
+                            class="SignInLink" data-i18n="login1.signIn">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-content Register">
+            <h2 class="animation" style="--li:17; --S:0;" data-i18n="login1.welcome">welcome back!</h2>
+            <p class="animation" style="--li:18; --S:1;" data-i18n="login1.welcomeText">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Blanditiis,</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

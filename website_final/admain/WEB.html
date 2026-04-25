@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>خير مصر | لوحة الإدارة</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="WEB.css" />
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<div id="login-screen">
+  <div style="width:100%;max-width:440px;padding:1rem;">
+    <div class="login-card">
+      <div class="login-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+      </div>
+      <h1 class="login-title" id="login-title">أهلاً بعودتك</h1>
+      <p class="login-sub" id="login-sub">سجّل دخولك لإدارة لوحة خير مصر</p>
+      <div class="form-group">
+        <label class="form-label" id="login-email-label">الإيميل</label>
+        <div class="input-wrap">
+          <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <input type="email" id="login-email" placeholder="admin@kheirmasr.org" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" id="login-password-label">الباسورد</label>
+        <div class="input-wrap">
+          <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <input type="password" id="login-password" placeholder="••••••••" />
+          <button class="pass-toggle" onclick="togglePass()">
+            <svg id="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="login-row">
+        <label class="remember"><input type="checkbox" /> <span id="remember-label">افتكرني</span></label>
+        <a href="#" class="forgot" id="forgot-label">نسيت الباسورد؟</a>
+      </div>
+      <button class="btn-primary" id="login-btn" onclick="doLogin()">دخول لوحة التحكم</button>
+      <div class="login-footer" id="login-footer">
+        معندكش حساب؟ <a href="#" class="link-blue" id="register-label">سجل من هنا</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 خير مصر. جميع الحقوق محفوظة.</p>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" style="display:none;">
+  <!-- Sidebar -->
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeMobileSidebar()"></div>
+  <button class="mobile-toggle" onclick="toggleMobileSidebar()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+  </button>
+
+  <aside id="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-logo" id="brand-title">خير مصر</span>
+      <button class="sidebar-toggle" onclick="toggleSidebar()">
+        <svg id="sidebar-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+  </aside>
+
+  <div id="main">
+    <!-- Header -->
+    <header id="header">
+      <div class="search-wrap">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="global-search" placeholder="دوّر جوه الداش بورد..." oninput="handleGlobalSearch(this.value)" />
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" onclick="toggleTheme()" id="theme-btn" title="Toggle theme">
+          <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button class="icon-btn" onclick="toggleLang()" title="Toggle language">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span id="lang-label" style="font-size:0.75rem;">AR</span>
+        </button>
+        <div style="position:relative;">
+          <button class="icon-btn bell-ring" onclick="toggleNotif()" id="notif-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+            <span class="badge" id="notif-badge">2</span>
+          </button>
+          <div id="notif-dropdown">
+            <div class="notif-header" id="notif-header-label">الإشعارات</div>
+            <div class="notif-item unread"><p class="notif-msg" id="notif-msg-1">فيه تبرع جديد بقيمة 500 جنيه</p><p class="notif-time" id="notif-time-1">من دقيقتين</p></div>
+            <div class="notif-item unread"><p class="notif-msg" id="notif-msg-2">حملة تعليم ولادنا وصلت لـ 80%</p><p class="notif-time" id="notif-time-2">من ساعة</p></div>
+            <div class="notif-item"><p class="notif-msg" id="notif-msg-3">متبرع جديد سجل في المنصة</p><p class="notif-time" id="notif-time-3">من 3 ساعات</p></div>
+          </div>
+        </div>
+        <div class="user-sep"></div>
+        <div class="user-info" style="display:none;" id="user-info-wrap">
+          <span class="user-name" id="user-name-display">أحمد فؤاد</span>
+          <span class="user-role">مدير النظام</span>
+        </div>
+        <button class="icon-btn logout-btn" onclick="doLogout()" title="Logout">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        </button>
+      </div>
+    </header>
+    <!-- Page Content -->
+    <main id="page-content">
+      <div class="page-inner" id="page-inner"></div>
+    </main>
+  </div>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div id="toast-container"></div>
+
+
+  <script src="WEB.js"></script>
+</body>
+</html>

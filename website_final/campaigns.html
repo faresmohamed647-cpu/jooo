@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Campaigns - NOUR AL- KHEIR</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="imege/icon.png" class="logo" alt="Logo"
+style="width: 50px; height: 50px; margin-right: 8px; border-radius: 50%;">
+                    <span class="logo-text" data-i18n="brand.name">NOUR AL-
+                        KHEIR</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about.html" data-i18n="nav.about">About Us</a>
+                    <a href="donate.html" data-i18n="nav.donate">Donate</a>
+                    <a href="campaigns.html"
+                        data-i18n="nav.campaigns">Campaigns</a>
+                    <a href="volunteer.html"
+                        data-i18n="nav.volunteer">Volunteer</a>
+                    <a href="beneficiaries.html"
+                        data-i18n="nav.beneficiaries">Beneficiaries</a>
+                    <a href="news.html" data-i18n="nav.news">News & Events</a>
+                    <a href="contact.html" data-i18n="nav.contact">Contact
+                        Us</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-toggle"
+                        onclick="toggleLanguage()">العربية</button>
+                    <a href="login1.html" class="btn-outline"
+                        style="padding: 10px 20px;"
+                        data-i18n="header.login">Login</a>
+                    <a href="login1.html" class="btn-primary"
+                        data-i18n="hero.donate">Donate Now</a>
+                    <button class="mobile-menu-btn"
+                        onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="hero"
+            style="background: var(--primary-color); height: 300px;">
+            <div class="hero-content">
+                <h1 data-i18n="campaigns.hero.title">Our Campaigns</h1>
+                <p data-i18n="campaigns.hero.subtitle">Support our active
+                    initiatives and make a real difference</p>
+            </div>
+        </section>
+
+        <!-- Campaigns Grid -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-3" id="campaigns-grid">
+                    <!-- Campaign 1 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1697665387559-253e7a645e96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5kcyUyMGhvbGRpbmclMjBkb25hdGlvbiUyMHN1cHBvcnR8ZW58MXx8fHwxNzczMDEwODc3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Winter Relief" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="campaigns.campaign1.title">Winter
+                                Relief Campaign</h3>
+                            <p class="card-text"
+                                data-i18n="campaigns.campaign1.text">Providing
+                                warm clothes and
+                                blankets to families in need during the cold
+                                winter months</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 75%;"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span><strong
+                                        data-i18n="campaigns.raised">Raised</strong>:
+                                    $75,000</span>
+                                <span><strong
+                                        data-i18n="campaigns.goal">Goal</strong>:
+                                    $100,000</span>
+                            </div>
+                            <a href="donate.html" class="btn-primary"
+                                style="display: block; text-align: center; margin-top: 20px;"
+                                data-i18n="common.donate">Donate
+                                to Campaign</a>
+                        </div>
+                    </div>
+
+                    <!-- Campaign 2 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1586503452950-997923af27f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNoaWxkcmVuJTIwZWR1Y2F0aW9uJTIwbGVhcm5pbmd8ZW58MXx8fHwxNzczMDEwODc3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Education" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="campaigns.campaign2.title">Education
+                                for All</h3>
+                            <p class="card-text"
+                                data-i18n="campaigns.campaign2.text">Supporting
+                                underprivileged
+                                children with school supplies, books, and
+                                tuition assistance</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 63%;"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span><strong
+                                        data-i18n="campaigns.raised">Raised</strong>:
+                                    $95,000</span>
+                                <span><strong
+                                        data-i18n="campaigns.goal">Goal</strong>:
+                                    $150,000</span>
+                            </div>
+                            <a href="donate.html" class="btn-primary"
+                                style="display: block; text-align: center; margin-top: 20px;"
+                                data-i18n="common.donate">Donate
+                                to Campaign</a>
+                        </div>
+                    </div>
+
+                    <!-- Campaign 3 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1706806595136-5afefb45da1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwaGVhbHRoY2FyZSUyMHZvbHVudGVlcnN8ZW58MXx8fHwxNzczMDEwODc4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Medical" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="campaigns.campaign3.title">Medical
+                                Aid Program</h3>
+                            <p class="card-text"
+                                data-i18n="campaigns.campaign3.text">Providing
+                                medical treatment and
+                                medication to those who cannot afford
+                                healthcare</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 65%;"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span><strong
+                                        data-i18n="campaigns.raised">Raised</strong>:
+                                    $130,000</span>
+                                <span><strong
+                                        data-i18n="campaigns.goal">Goal</strong>:
+                                    $200,000</span>
+                            </div>
+                            <a href="donate.html" class="btn-primary"
+                                style="display: block; text-align: center; margin-top: 20px;"
+                                data-i18n="common.donate">Donate
+                                to Campaign</a>
+                        </div>
+                    </div>
+
+                    <!-- Campaign 4 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZG9uYXRpb24lMjBmZWVkaW5nfGVufDF8fHx8MTc3MzAxMDg3OHww&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Food Program" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="campaigns.campaign4.title">Feed the
+                                Hungry</h3>
+                            <p class="card-text"
+                                data-i18n="campaigns.campaign4.text">Providing
+                                nutritious meals to
+                                families experiencing food insecurity</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 82%;"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span><strong
+                                        data-i18n="campaigns.raised">Raised</strong>:
+                                    $82,000</span>
+                                <span><strong
+                                        data-i18n="campaigns.goal">Goal</strong>:
+                                    $100,000</span>
+                            </div>
+                            <a href="donate.html" class="btn-primary"
+                                style="display: block; text-align: center; margin-top: 20px;"
+                                data-i18n="common.donate">Donate
+                                to Campaign</a>
+                        </div>
+                    </div>
+
+                    <!-- Campaign 5 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1584467735815-f778f274e296?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzaW5nJTIwc2hlbHRlciUyMGhvbWVsZXNzfGVufDF8fHx8MTc3MzAxMDg3OHww&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Housing" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="campaigns.campaign5.title">Shelter
+                                and Housing</h3>
+                            <p class="card-text"
+                                data-i18n="campaigns.campaign5.text">Helping
+                                homeless families find
+                                safe and affordable housing</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 45%;"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span><strong
+                                        data-i18n="campaigns.raised">Raised</strong>:
+                                    $90,000</span>
+                                <span><strong
+                                        data-i18n="campaigns.goal">Goal</strong>:
+                                    $200,000</span>
+                            </div>
+                            <a href="donate.html" class="btn-primary"
+                                style="display: block; text-align: center; margin-top: 20px;"
+                                data-i18n="common.donate">Donate
+                                to Campaign</a>
+                        </div>
+                    </div>
+
+                    <!-- Campaign 6 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMHBsYXlpbmclMjBvcnBoYW5hZ2V8ZW58MXx8fHwxNzczMDEwODc5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Orphan Support" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="campaigns.campaign6.title">Orphan
+                                Support</h3>
+                            <p class="card-text"
+                                data-i18n="campaigns.campaign6.text">Providing
+                                care, education, and
+                                support for orphaned children</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 58%;"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span><strong
+                                        data-i18n="campaigns.raised">Raised</strong>:
+                                    $58,000</span>
+                                <span><strong
+                                        data-i18n="campaigns.goal">Goal</strong>:
+                                    $100,000</span>
+                            </div>
+                            <a href="donate.html" class="btn-primary"
+                                style="display: block; text-align: center; margin-top: 20px;"
+                                data-i18n="common.donate">Donate
+                                to Campaign</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="card"
+                    style="background: var(--primary-color); color: white; padding: 60px 40px; text-align: center;">
+                    <h2
+                        style="font-size: 36px; margin-bottom: 20px; color: white;"
+                        data-i18n="campaigns.cta.title">Can't
+                        find the right campaign?</h2>
+                    <p
+                        style="font-size: 20px; margin-bottom: 30px; opacity: 0.95;"
+                        data-i18n="campaigns.cta.subtitle">Make
+                        a general donation and we'll allocate it where it's
+                        needed most</p>
+                    <a href="donate.html" class="btn-outline"
+                        style="background: white; color: var(--primary-color); border-color: white; display: inline-block; padding: 16px 40px; font-size: 18px;"
+                        data-i18n="campaigns.cta.btn">Make
+                        General Donation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="logo" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                                style="width: 32px; height: 32px;">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <span class="logo-text" data-i18n="brand.name">NOUR
+                                AL- KHEIR</span>
+                        </div>
+                        <p class="footer-text" data-i18n="footer.tagline">We are
+                            dedicated to helping those
+                            in need and building a better tomorrow for
+                            everyone.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.quickLinks">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html"
+                                    data-i18n="nav.home">Home</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About
+                                    Us</a></li>
+                            <li><a href="campaigns.html"
+                                    data-i18n="nav.campaigns">Campaigns</a></li>
+                            <li><a href="contact.html"
+                                    data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.contactInfo">Contact
+                            Information</h3>
+                        <ul class="footer-links">
+                            <li>📧 info@nour al-kheir.org</li>
+                            <li>📞 +20 123 456 7890</li>
+                            <li>📍 123 Charity Street, Cairo, Egypt</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.donate">Donate</h3>
+                        <p class="footer-text" style="margin-bottom: 20px;"
+                            data-i18n="footer.donateText">Make
+                            a difference in someone's life today.</p>
+                        <a href="login1.html" class="btn-primary"
+                            style="display: inline-block;"
+                            data-i18n="hero.donate">Donate Now</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">© 2024 NOUR AL- KHEIR. All
+                        rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+        <script>
+(function(){
+  if(localStorage.getItem("token")){
+    document.querySelectorAll('a[href="login1.html"]').forEach(a=>{
+      a.href="admain/WEB.html"; a.textContent="⚙️ Dashboard";
+    });
+  }
+})();
+</script>
+    </body>
+</html>

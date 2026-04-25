@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beneficiaries - NOUR AL- KHEIR</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="imege/icon.png" class="logo" alt="Logo"
+                        style="width: 50px; height: 50px; margin-right: 8px; border-radius: 50%;">
+                    <span class="logo-text" data-i18n="brand.name">NOUR AL-
+                        KHEIR</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about.html" data-i18n="nav.about">About Us</a>
+                    <a href="donate.html" data-i18n="nav.donate">Donate</a>
+                    <a href="campaigns.html"
+                        data-i18n="nav.campaigns">Campaigns</a>
+                    <a href="volunteer.html"
+                        data-i18n="nav.volunteer">Volunteer</a>
+                    <a href="beneficiaries.html"
+                        data-i18n="nav.beneficiaries">Beneficiaries</a>
+                    <a href="news.html" data-i18n="nav.news">News & Events</a>
+                    <a href="contact.html" data-i18n="nav.contact">Contact
+                        Us</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-toggle"
+                        onclick="toggleLanguage()">العربية</button>
+                    <a href="login1.html" class="btn-outline"
+                        style="padding: 10px 20px;"
+                        data-i18n="header.login">Login</a>
+                    <a href="login1.html" class="btn-primary"
+                        data-i18n="hero.donate">Donate Now</a>
+                    <button class="mobile-menu-btn"
+                        onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="hero"
+            style="background: var(--primary-color); height: 300px;">
+            <div class="hero-content">
+                <h1 data-i18n="beneficiaries.hero.title">Success Stories</h1>
+                <p data-i18n="beneficiaries.hero.subtitle">Read about the lives
+                    we've touched and transformed</p>
+            </div>
+        </section>
+
+        <!-- Impact Stats -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-4">
+                    <div
+                        style="text-align: center; padding: 30px; background: var(--bg-light); border-radius: 12px;">
+                        <div
+                            style="font-size: 48px; font-weight: 800; color: var(--primary-color); margin-bottom: 10px;">50,000+</div>
+                        <div style="font-size: 18px; font-weight: 600;"
+                            data-i18n="beneficiaries.peopleHelped">People
+                            Helped</div>
+                    </div>
+
+                    <div
+                        style="text-align: center; padding: 30px; background: var(--bg-light); border-radius: 12px;">
+                        <div
+                            style="font-size: 48px; font-weight: 800; color: var(--primary-color); margin-bottom: 10px;">5,000+</div>
+                        <div style="font-size: 18px; font-weight: 600;"
+                            data-i18n="beneficiaries.familiesSupported">Families
+                            Supported</div>
+                    </div>
+
+                    <div
+                        style="text-align: center; padding: 30px; background: var(--bg-light); border-radius: 12px;">
+                        <div
+                            style="font-size: 48px; font-weight: 800; color: var(--primary-color); margin-bottom: 10px;">10,000+</div>
+                        <div style="font-size: 18px; font-weight: 600;"
+                            data-i18n="beneficiaries.childrenEducated">Children
+                            Educated</div>
+                    </div>
+
+                    <div
+                        style="text-align: center; padding: 30px; background: var(--bg-light); border-radius: 12px;">
+                        <div
+                            style="font-size: 48px; font-weight: 800; color: var(--primary-color); margin-bottom: 10px;">2,000+</div>
+                        <div style="font-size: 18px; font-weight: 600;"
+                            data-i18n="beneficiaries.medicalTreatments">Medical
+                            Treatments</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"
+                        data-i18n="beneficiaries.stories.title">Their
+                        Stories</h2>
+                    <p class="section-subtitle"
+                        data-i18n="beneficiaries.stories.subtitle">Real stories
+                        of hope,
+                        resilience, and transformation</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Story 1 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=400&fit=crop"
+                            alt="Success Story" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="beneficiaries.story1.title">Nour's
+                                Education Journey</h3>
+                            <p class="card-text"
+                                data-i18n="beneficiaries.story1.text">
+                                "Thanks to Hope Foundation, I was able to complete my education. They provided me with books, supplies, and a scholarship. Today, I'm a university graduate pursuing my dream of becoming a teacher."
+                            </p>
+                            <p
+                                style="color: var(--primary-color); font-weight: 600; margin-top: 15px;"
+                                data-i18n="beneficiaries.story1.author">-
+                                Nour, 22 years old</p>
+                        </div>
+                    </div>
+
+                    <!-- Story 2 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop"
+                            alt="Success Story" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="beneficiaries.story2.title">Ahmed's
+                                Recovery</h3>
+                            <p class="card-text"
+                                data-i18n="beneficiaries.story2.text">
+                                "When I fell ill and couldn't afford treatment, Hope Foundation stepped in. They covered my medical expenses and supported my family during the difficult time. I'm now healthy and back to work."
+                            </p>
+                            <p
+                                style="color: var(--primary-color); font-weight: 600; margin-top: 15px;"
+                                data-i18n="beneficiaries.story2.author">-
+                                Ahmed, 35 years old</p>
+                        </div>
+                    </div>
+
+                    <!-- Story 3 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=400&fit=crop"
+                            alt="Success Story" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="beneficiaries.story3.title">Fatima's
+                                New Beginning</h3>
+                            <p class="card-text"
+                                data-i18n="beneficiaries.story3.text">
+                                "After losing everything, Hope Foundation helped my family find shelter and provided us with food and clothing. Their support gave us hope when we had none. We're now rebuilding our lives."
+                            </p>
+                            <p
+                                style="color: var(--primary-color); font-weight: 600; margin-top: 15px;"
+                                data-i18n="beneficiaries.story3.author">-
+                                Fatima, 40 years old</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"
+                        data-i18n="beneficiaries.testimonials.title">What They
+                        Say</h2>
+                    <p class="section-subtitle"
+                        data-i18n="beneficiaries.testimonials.subtitle">Hear
+                        directly from those we've
+                        helped</p>
+                </div>
+
+                <div class="grid grid-2">
+                    <div class="card"
+                        style="padding: 40px; background: var(--bg-light);">
+                        <div
+                            style="display: flex; gap: 20px; margin-bottom: 20px;">
+                            <img
+                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop"
+                                style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;"
+                                alt="Testimonial">
+                            <div>
+                                <h4
+                                    style="font-size: 20px; font-weight: 700; margin-bottom: 5px;"
+                                    data-i18n="beneficiaries.testimonial1.name">Amira
+                                    Mohamed</h4>
+                                <p style="color: var(--text-light);"
+                                    data-i18n="beneficiaries.testimonial1.role">Mother
+                                    of
+                                    3</p>
+                            </div>
+                        </div>
+                        <p
+                            style="font-size: 18px; line-height: 1.8; color: var(--text-dark); font-style: italic;"
+                            data-i18n="beneficiaries.testimonial1.text">
+                            "Hope Foundation didn't just provide material support, they gave us dignity and hope. The volunteers treated us with respect and kindness. My children can now go to school with full bellies and warm clothes."
+                        </p>
+                    </div>
+
+                    <div class="card"
+                        style="padding: 40px; background: var(--bg-light);">
+                        <div
+                            style="display: flex; gap: 20px; margin-bottom: 20px;">
+                            <img
+                                src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=80&h=80&fit=crop"
+                                style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;"
+                                alt="Testimonial">
+                            <div>
+                                <h4
+                                    style="font-size: 20px; font-weight: 700; margin-bottom: 5px;"
+                                    data-i18n="beneficiaries.testimonial2.name">Mahmoud
+                                    Ali</h4>
+                                <p style="color: var(--text-light);"
+                                    data-i18n="beneficiaries.testimonial2.role">Small
+                                    Business Owner</p>
+                            </div>
+                        </div>
+                        <p
+                            style="font-size: 18px; line-height: 1.8; color: var(--text-dark); font-style: italic;"
+                            data-i18n="beneficiaries.testimonial2.text">
+                            "The business training and small loan I received changed my life completely. I went from unemployment to running a successful shop. Hope Foundation believes in people and empowers them to succeed."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="card"
+                    style="background: var(--primary-color); color: white; padding: 60px 40px; text-align: center;">
+                    <h2
+                        style="font-size: 36px; margin-bottom: 20px; color: white;"
+                        data-i18n="beneficiaries.cta.title">Help
+                        Us Create More Success Stories</h2>
+                    <p
+                        style="font-size: 20px; margin-bottom: 30px; opacity: 0.95;"
+                        data-i18n="beneficiaries.cta.subtitle">Your
+                        contribution can transform lives and create lasting
+                        change</p>
+                    <div
+                        style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                        <a href="login1.html" class="btn-outline"
+                            style="background: white; color: var(--primary-color); border-color: white; padding: 16px 40px; font-size: 18px;"
+                            data-i18n="hero.donate">Donate
+                            Now</a>
+                        <a href="volunteer.html" class="btn-outline"
+                            style="border-color: white; color: white; padding: 16px 40px; font-size: 18px;"
+                            data-i18n="beneficiaries.cta.volunteer">Become
+                            a Volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="logo" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                                style="width: 32px; height: 32px;">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <span class="logo-text" data-i18n="brand.name">NOUR
+                                AL- KHEIR</span>
+                        </div>
+                        <p class="footer-text" data-i18n="footer.tagline">We are
+                            dedicated to helping those
+                            in need and building a better tomorrow for
+                            everyone.</p>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.quickLinks">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html"
+                                    data-i18n="nav.home">Home</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About
+                                    Us</a></li>
+                            <li><a href="campaigns.html"
+                                    data-i18n="nav.campaigns">Campaigns</a></li>
+                            <li><a href="contact.html"
+                                    data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.contactInfo">Contact
+                            Information</h3>
+                        <ul class="footer-links">
+                            <li>📧 info@nour al-kheir.org</li>
+                            <li>📞 +20 123 456 7890</li>
+                            <li>📍 123 Charity Street, Cairo, Egypt</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.donate">Donate</h3>
+                        <p class="footer-text" style="margin-bottom: 20px;"
+                            data-i18n="footer.donateText">Make
+                            a difference in someone's life today.</p>
+                        <a href="login1.html" class="btn-primary"
+                            style="display: inline-block;"
+                            data-i18n="hero.donate">Donate Now</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">© 2024 NOUR AL- KHEIR. All
+                        rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+        <script>
+(function(){
+  if(localStorage.getItem("token")){
+    document.querySelectorAll('a[href="login1.html"]').forEach(a=>{
+      a.href="admain/WEB.html"; a.textContent="⚙️ Dashboard";
+    });
+  }
+})();
+</script>
+    </body>
+</html>

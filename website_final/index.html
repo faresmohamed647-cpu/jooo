@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NOUR AL- KHEIR - Together We Build Hope</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="imege/icon.png" class="logo" alt="Logo"
+                        style="width: 50px; height: 50px; margin-right: 8px; border-radius: 50%;">
+                    <span class="logo-text" data-i18n="brand.name">NOUR AL-
+                        KHEIR</span>
+                </a>
+
+                <nav class="nav">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="about.html" data-i18n="nav.about">About Us</a>
+                    <a href="donate.html" data-i18n="nav.donate">Donate</a>
+                    <a href="campaigns.html"
+                        data-i18n="nav.campaigns">Campaigns</a>
+                    <a href="volunteer.html"
+                        data-i18n="nav.volunteer">Volunteer</a>
+                    <a href="beneficiaries.html"
+                        data-i18n="nav.beneficiaries">Beneficiaries</a>
+                    <a href="news.html" data-i18n="nav.news">News & Events</a>
+                    <a href="contact.html" data-i18n="nav.contact">Contact
+                        Us</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="lang-toggle"
+                        onclick="toggleLanguage()">العربية</button>
+                    <a href="login1.html" class="btn-outline"
+                        style="padding: 10px 20px;"
+                        data-i18n="header.login">Login</a>
+                    <a href="login1.html" class="btn-primary"
+                        data-i18n="hero.donate">Donate Now</a>
+                    <button class="mobile-menu-btn"
+                        onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero"
+            style="background-image: url('https://images.unsplash.com/photo-1560220604-1985ebfe28b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGFyaXR5JTIwdm9sdW50ZWVycyUyMGhlbHBpbmclMjBjb21tdW5pdHl8ZW58MXx8fHwxNzczMDEwODc3fDA&ixlib=rb-4.1.0&q=80&w=1080');">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Together We Build Hope</h1>
+                <p data-i18n="hero.subtitle">Your donation today creates a
+                    brighter tomorrow for those in need</p>
+                <div class="hero-buttons">
+                    <a href="login1.html" class="btn-primary"
+                        data-i18n="hero.donate">Donate Now</a>
+                    <a href="about.html" class="btn-outline"
+                        data-i18n="hero.learn"
+                        style="background: rgba(255,255,255,0.1); border-color: white; color: white;">Learn
+                        More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-card">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                            </svg>
+                            <div class="stat-value" data-count="50000"
+                                data-suffix="+">0</div>
+                            <div class="stat-label"
+                                data-i18n="stats.beneficiaries">Beneficiaries</div>
+                        </div>
+                        <div class="stat-item">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <div class="stat-value" data-count="5000"
+                                data-suffix="+">0</div>
+                            <div class="stat-label"
+                                data-i18n="stats.volunteers">Volunteers</div>
+                        </div>
+                        <div class="stat-item">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
+                            </svg>
+                            <div class="stat-value" data-count="2"
+                                data-suffix="M+">0</div>
+                            <div class="stat-label"
+                                data-i18n="stats.donations">Donations</div>
+                        </div>
+                        <div class="stat-item">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                            <div class="stat-value" data-count="25"
+                                data-suffix="+">0</div>
+                            <div class="stat-label"
+                                data-i18n="stats.campaigns">Active
+                                Campaigns</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: center;">
+                    <div>
+                        <h2 class="section-title"
+                            style="text-align: left;"
+                            data-i18n="index.about.title">About Our
+                            Organization</h2>
+                        <p class="card-text"
+                            style="font-size: 18px; margin-bottom: 20px;"
+                            data-i18n="index.about.text">
+                            We are a non-profit organization dedicated to
+                            helping those in need. Our mission is to provide
+                            support, hope, and opportunities to vulnerable
+                            communities through various charitable programs and
+                            initiatives.
+                        </p>
+                        <a href="about.html" class="btn-primary"
+                            data-i18n="hero.learn">Learn More</a>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images.unsplash.com/photo-1769837230054-7f3a7356dde1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtd29yayUyMGNvbW11bml0eSUyMHNlcnZpY2V8ZW58MXx8fHwxNzczMDEwODc4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="About Us"
+                            style="border-radius: 12px; width: 100%; height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Campaigns -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"
+                        data-i18n="index.featured.title">Featured Campaigns</h2>
+                    <p class="section-subtitle"
+                        data-i18n="index.featured.subtitle">Support our current
+                        initiatives</p>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Campaign 1 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1697665387559-253e7a645e96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYW5kcyUyMGhvbGRpbmclMjBkb25hdGlvbiUyMHN1cHBvcnR8ZW58MXx8fHwxNzczMDEwODc3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Winter Relief" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="index.campaign1.title">Winter Relief
+                                Campaign</h3>
+                            <p class="card-text"
+                                data-i18n="index.campaign1.text">Providing warm
+                                clothes and
+                                blankets to families in need during winter</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 75%;"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span><span
+                                        data-i18n="index.raised">Raised</span>:
+                                    $75,000</span>
+                                <span><span data-i18n="index.goal">Goal</span>:
+                                    $100,000</span>
+                            </div>
+                            <a href="campaigns.html" class="btn-primary"
+                                style="display: block; text-align: center; margin-top: 20px;"
+                                data-i18n="common.donate">Donate to Campaign</a>
+                        </div>
+                    </div>
+
+                    <!-- Campaign 2 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1586503452950-997923af27f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGNoaWxkcmVuJTIwZWR1Y2F0aW9uJTIwbGVhcm5pbmd8ZW58MXx8fHwxNzczMDEwODc3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Education" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="index.campaign2.title">Education for
+                                All</h3>
+                            <p class="card-text"
+                                data-i18n="index.campaign2.text">Supporting
+                                underprivileged
+                                children with school supplies and tuition</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 63%;"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span><span
+                                        data-i18n="index.raised">Raised</span>:
+                                    $95,000</span>
+                                <span><span data-i18n="index.goal">Goal</span>:
+                                    $150,000</span>
+                            </div>
+                            <a href="campaigns.html" class="btn-primary"
+                                style="display: block; text-align: center; margin-top: 20px;"
+                                data-i18n="common.donate">Donate to Campaign</a>
+                        </div>
+                    </div>
+
+                    <!-- Campaign 3 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1706806595136-5afefb45da1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwaGVhbHRoY2FyZSUyMHZvbHVudGVlcnN8ZW58MXx8fHwxNzczMDEwODc4fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Medical" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title"
+                                data-i18n="index.campaign3.title">Medical Aid
+                                Program</h3>
+                            <p class="card-text"
+                                data-i18n="index.campaign3.text">Providing
+                                medical treatment and
+                                medication to those who cannot afford it</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"
+                                    style="width: 65%;"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span><span
+                                        data-i18n="index.raised">Raised</span>:
+                                    $130,000</span>
+                                <span><span data-i18n="index.goal">Goal</span>:
+                                    $200,000</span>
+                            </div>
+                            <a href="campaigns.html" class="btn-primary"
+                                style="display: block; text-align: center; margin-top: 20px;"
+                                data-i18n="common.donate">Donate to Campaign</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-40">
+                    <a href="campaigns.html" class="btn-outline"
+                        data-i18n="index.viewAllCampaigns">View All
+                        Campaigns</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="logo" style="margin-bottom: 20px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor"
+                                style="width: 32px; height: 32px;">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <span class="logo-text" data-i18n="brand.name">NOUR
+                                AL- KHEIR</span>
+                        </div>
+                        <p class="footer-text" data-i18n="footer.tagline">We are
+                            dedicated to helping those
+                            in need and building a better tomorrow for
+                            everyone.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <svg viewBox="0 0 24 24"><path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg viewBox="0 0 24 24"><path
+                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" /></svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg viewBox="0 0 24 24"><path
+                                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" /></svg>
+                            </a>
+                            <a href="#" class="social-link">
+                                <svg viewBox="0 0 24 24"><path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.quickLinks">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html"
+                                    data-i18n="nav.home">Home</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">About
+                                    Us</a></li>
+                            <li><a href="campaigns.html"
+                                    data-i18n="nav.campaigns">Campaigns</a></li>
+                            <li><a href="volunteer.html"
+                                    data-i18n="nav.volunteer">Volunteer</a></li>
+                            <li><a href="news.html" data-i18n="nav.news">News &
+                                    Events</a></li>
+                            <li><a href="contact.html"
+                                    data-i18n="nav.contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.contactInfo">Contact
+                            Information</h3>
+                        <ul class="footer-links">
+                            <li>📧 info@nour al-kheir.org</li>
+                            <li>📞 +20 123 456 7890</li>
+                            <li>📍 123 Charity Street, Cairo, Egypt</li>
+                            <li>🕐 Sun - Thu: 9:00 AM - 5:00 PM</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer-title"
+                            data-i18n="footer.donate">Donate</h3>
+                        <p class="footer-text" style="margin-bottom: 20px;"
+                            data-i18n="footer.donateText">Make
+                            a difference in someone's life today.</p>
+                        <a href="login1.html" class="btn-primary"
+                            style="display: inline-block;"
+                            data-i18n="hero.donate">Donate Now</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">© 2024 NOUR AL- KHEIR. All
+                        rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+        <script>
+// If admin is already logged in, show an "Admin Panel" button in nav
+(function() {
+  if (localStorage.getItem('token')) {
+    const nav = document.querySelector('.nav-links') || document.querySelector('nav ul') || document.querySelector('nav');
+    if (nav) {
+      const li = document.createElement('a');
+      li.href = 'admain/WEB.html';
+      li.textContent = '⚙️ Admin Panel';
+      li.style.cssText = 'background:#e74c3c;color:#fff;padding:8px 16px;border-radius:8px;font-weight:600;text-decoration:none;font-size:0.85rem;';
+      nav.appendChild(li);
+    }
+    // Also change Login button text to "Dashboard"
+    document.querySelectorAll('a[href="login1.html"]').forEach(a => {
+      a.href = 'admain/WEB.html';
+      a.textContent = '⚙️ Dashboard';
+    });
+  }
+})();
+</script>
+    </body>
+</html>
